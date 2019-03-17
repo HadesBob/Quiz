@@ -18,7 +18,7 @@
 			<button @click="createQuestion" type="submit">ADD Question</button>
 		</form>
 		
-		<div v-for="q in questions">
+		<div v-for="q in questions" v-bind:key="q._id">
 			<p>{{q.text}}</p>
 			<p>{{q.first}}</p>
 			<p>{{q.second}}</p>

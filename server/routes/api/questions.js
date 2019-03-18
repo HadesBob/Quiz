@@ -4,7 +4,7 @@ const mongodb = require('mongodb');
 const router = express.Router();
 
 async function loadQuestions(){
-	const client = await mongodb.MongoClient.connect('mongodb+srv://lukas123:lukas123@cluster0-tnmst.mongodb.net/test?retryWrites=true', {useNewUrlParser:true});
+	const client = await mongodb.MongoClient.connect(process.env.MONGOLAB_URI || 'mongodb+srv://lukas123:lukas123@cluster0-tnmst.mongodb.net/test?retryWrites=true', {useNewUrlParser:true});
 	
 	return client.db("test").collection("questions");
 }

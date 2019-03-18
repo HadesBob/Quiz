@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = '/api/questions/';
+const url = 'api/questions/';
 
 class QuestionService{
 	
@@ -15,7 +15,7 @@ class QuestionService{
 						...quest,
 						createdAt: new Date(quest.createdAt)
 					})
-				))
+				));
 				}
 				catch(err){
 					reject(err);

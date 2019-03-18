@@ -2,6 +2,10 @@
 
 	
 		<div>
+		
+		<div><h1>HEADER</h1></div>
+		
+		
 			<form v-on:submit.prevent>
 			<label>pytanie</label>
 			<input type="text" v-model="newQuestion.text">
@@ -17,8 +21,7 @@
 			<input type="text" v-model="newQuestion.category">
 			<button @click="createQuestion" type="submit">ADD Question</button>
 		</form>
-		<div>afhoadfhoa oaioaijsfoj</div>
-		<div>afhoadfhoa oaioaijsfoj</div><div>afhoadfhoa oaIGUIGIUjsfoj</div><div>afhoaOIJO
+		
 		<div v-for="q in questions" v-bind:key="q._id">
 			<p>{{q.text}}</p>
 			<p>{{q.first}}</p>
@@ -28,6 +31,9 @@
 			<p>{{q.category}}</p>
 		
 		</div>
+		
+		
+		
 	</div>
 </template>
 

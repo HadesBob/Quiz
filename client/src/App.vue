@@ -2,12 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <QuestionComponent />
+	
   </div>
 </template>
 
 <script>
 
-import QuestionComponent from './components/QuestionComponent.vue'
+import QuestionComponent from './components/QuestionComponent.vue';
 export default {
   name: 'app',
   components: {

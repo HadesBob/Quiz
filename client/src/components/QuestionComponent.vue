@@ -17,7 +17,8 @@
 			<input type="text" v-model="newQuestion.category">
 			<button @click="createQuestion" type="submit">ADD Question</button>
 		</form>
-		<div>LAKEJFEIFJEOIFJ</div>
+		<div>afhoadfhoa oaioaijsfoj</div>
+		<div>afhoadfhoa oaioaijsfoj</div><div>afhoadfhoa oaIGUIGIUjsfoj</div><div>afhoaOIJO
 		<div v-for="q in questions" v-bind:key="q._id">
 			<p>{{q.text}}</p>
 			<p>{{q.first}}</p>
